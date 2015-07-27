@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+	.main{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.section1,
+	.section2,
+	.section3{
+		width:33.333%;
+		float: left;
+	}
+
+/* mobiles */
+	@media(max-width: 420px){
+		.section1,
+		.section2,
+		.section3{
+			width:100% !important;
+			float: left;
+		}
+	}
+
+/* tablets */
+	@media(max-width: 800px){
+		.section1,
+		.section2,
+		.section3{
+			width:50%;
+			float: left;
+		}
+	}
+
+</style>
+</head>
+<body class="main">
+<div class="section1">
+	<h2>Bootstrap</h2>
+	<p>Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.</p>
+	<button>BootstrapButton</button>
+</div>
+<div class="section2">
+	<h2>Source code</h2>
+	<p>Source Less, JavaScript, and font files, along with our docs. Requires a Less compiler and some setup.</p>
+	<button>Download source</button>
+</div>
+<div class="section2">
+	<h2>Sass</h2>
+	<p>Bootstrap ported from Less to Sass for easy inclusion in Rails, Compass, or Sass-only projects.</p>
+	<button>Download sass</button>
+</div>
+</body>
+</html>
